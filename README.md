@@ -1,20 +1,27 @@
-# Generic Daydream Enabler ("Google Pixelifier")
+# Essential PH-1 Daydream Enabler ("Google Pixelifier")
 
-January 2018 I've bought me a new toy, made by Sony, with the 4K-IPS-display.
-I didn't yet know that it's the best available solution on the market for the VR goggles. Then, I've unlocked my bootloader, and rooted the device.
+There is nothing insufficient about the Magisk module from saved-j that allowed
+Daydream to run on nearly any phone.
+In fact, it worked a little too well.
+Installing the original Daydream Enabler module fooled everything so well that
+the Essential camera app no longer recognized the phone, and instead of
+properly running, instead opened a link for you to buy the Essential PH-1.
 
-I've tried everything on my Xperia XZ Premium, but nothing led to success. Some Magisk modules only let Daydream alone launch, some patches let some apps work. Some patches only let the VR apps work in 2D only. Some even bootlooped my Xperia. Then I took apart all of the works I've collected by then, spent some time on a little research, and voila, here you have this module.;
+While the Essential camera app is of relatively worse quality that any Gcam
+port, it is also the *only* camera app that can access the monochrome sensor.
 
-This module will enable the necessary build.prop strings, as well as android.software.vr.mode and android.hardware.vr.high_performance features for any Xperia, since they have some extra strings in build.prop that, as I assume, other phones don't. It may or **may not** work your Android device, too.
+This may or may not be important to you, but I personally like using the
+monochrome sensor at times.
 
-Since this is a very low-level kind of file about the features provided, it WILL work on most Snapdragon-based devices with more-or-less pure Android, though. I'm pretty sure it might work on some MTK, Exynos or Kirin-based devices, too, as well as devices based on other CPUs.
+So, I removed settings one by one until both the Essential camera app and
+Daydream both ran without any (apparent) problems.
 
-I also used this guide, which you may feel free to use yourself on your specific device:
-https://www.xda-developers.com/force-daydream-vr-compatibility/
-
-That page also includes other steps needed to get into Daydream. 
+**Note**: This is (likely) not the most minimal set of options/properties
+to get Daydream to run on the Essential PH-1.
+It's just the first working one that I found.
 
 **Credits**
+- saved-j for making the original module that allowed (nearly) all phones to run Daydream.
 - XDA for being the awesome place that it is to get the most out of our devices.
 - topjohnwu for making this Magisk module template that I could use.
 - 4rk4n
